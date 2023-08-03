@@ -1,0 +1,31 @@
+Android app development
+  Java vs Kotlin
+  Kotlin preferred
+Android DX
+  Android Studio vs Intellj
+  Android Studio preferred
+UI development
+  XML vs Compose
+  Compose preferred
+
+
+Jetpack Compose
+  Compose functions are building blocks that describe UI but don't return anything
+  They can take input and generate it on screen
+
+  Annotations 
+  @Composable
+  fun greet(){...}
+  @Preview(parameters)
+
+The Compose function:
+
+MUST be a noun: DoneButton()
+NOT a verb or verb phrase: DrawTextField()
+NOT a nouned preposition: TextFieldWithLink()
+NOT an adjective: Bright()
+NOT an adverb: Outside()
+Nouns MAY be prefixed by descriptive adjectives: RoundIcon()
+
+
+  
