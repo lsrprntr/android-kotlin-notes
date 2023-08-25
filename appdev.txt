@@ -28,4 +28,11 @@ NOT an adverb: Outside()
 Nouns MAY be prefixed by descriptive adjectives: RoundIcon()
 
 
-  
+Architecture Principles
+DATA LAYER (Data sources)
+vvv
+UI LAYER (UI and state holders)
+- view models are stateholders
+
+UI elements send events to view model.
+View model updates ui state and recomposes Ui elements.
