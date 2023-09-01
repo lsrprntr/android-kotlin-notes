@@ -1,4 +1,4 @@
-# android-kotlin-notes
+# android-kotlin-notes-practice
 Repo for my notes on Kotlin and Android studio
 
 There are also practice projects uploaded. They uploaded here without their dependencies. Only the .kt files are uploaded for reference purposes.
