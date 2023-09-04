@@ -58,4 +58,29 @@ There are three ways to declare a MutableState object in a composable:
 > val (value, setValue) = remember { mutableStateOf(defaultvalue) }
 
 
+You make a viewModel which holds states.  
+You split the states into UiStates with their own interfaces.  
+That should cover the Ui Layer.  
 
+To split the Data Layer, you need to add dependency injection and repositories.  
+
+**What is a repository?**  
+In general a repository class:  
+- Exposes data to the rest of the app.  
+- Centralizes changes to data.  
+- Resolves conflicts between multiple data sources.  
+- Abstracts sources of data from the rest of the app.  
+- Contains business logic.  
+- The repository naming convention is type of data + Repository.  
+
+DI is when a dependency is provided at runtime instead of being hardcoded into the calling class.  
+
+Implementing dependency injection:  
+- Helps with the reusability of code. Code is not dependent on a specific object, which allows for greater flexibility.
+- Makes refactoring easier. Code is loosely coupled, so refactoring one section of code does not impact another section of code.
+- Helps with testing. Test objects can be passed in during testing.
+To fix this issue, instead of the ViewModel creating the repository, we need a way to decide and pass a repository instance to use for production and test dynamically.
+
+This process is done by implementing an application container that provides the repository to the ViewModel.  
+
+A container is an object that contains the dependencies that the app requires. These dependencies are used across the whole application, so they need to be in a common place that all activities can use. You can create a subclass of the Application class and store a reference to the container.  
