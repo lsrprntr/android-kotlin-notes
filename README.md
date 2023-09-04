@@ -1,8 +1,7 @@
 # android-kotlin-notes-practice
-Repo for my notes on Kotlin and Android studio
+Repo for my files on Kotlin and Android studio
 
-There are also practice projects uploaded. They uploaded here without their dependencies. Only the .kt files are uploaded for reference purposes.
-
+There are practice projects uploaded. They uploaded here without their dependencies. Only the .kt files are uploaded for reference purposes.
 
 Originally started learning XML UI method. Switched to Jetpack Compose. 
 
