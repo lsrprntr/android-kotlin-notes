@@ -1,3 +1,4 @@
+/*
 Android app development
   Java vs Kotlin
   Kotlin preferred
@@ -7,17 +8,22 @@ Android DX
 UI development
   XML vs Compose
   Compose preferred
+*/
 
-
+/*
 Jetpack Compose
   Compose functions are building blocks that describe UI but don't return anything
   They can take input and generate it on screen
 
-  Annotations 
+*/
+  //Annotations 
   @Composable
-  fun greet(){...}
+      fun greet(){...} //Name of composable function and {contents}
+
+  //Other annotations
   @Preview(parameters)
 
+/*
 The Compose function:
 
 MUST be a noun: DoneButton()
@@ -26,9 +32,14 @@ NOT a nouned preposition: TextFieldWithLink()
 NOT an adjective: Bright()
 NOT an adverb: Outside()
 Nouns MAY be prefixed by descriptive adjectives: RoundIcon()
+*/
 
 
-Architecture Principles
+/*
+// Architecture Principles
+Unidirectional flow. Events move up, data flows down.
+
+
 DATA LAYER (Data sources)
 vvv
 UI LAYER (UI and state holders)
@@ -40,9 +51,27 @@ View model updates ui state and recomposes Ui elements.
 Passing in the required objects is called dependency injection (DI). It is also known as inversion of control.
 
 DI is when a dependency is provided at runtime instead of being hardcoded into the calling class.
+*/
 
+/*
 Implementing dependency injection:
 
     Helps with the reusability of code. Code is not dependent on a specific object, which allows for greater flexibility.
     Makes refactoring easier. Code is loosely coupled, so refactoring one section of code does not impact another section of code.
     Helps with testing. Test objects can be passed in during testing.
+
+*/
+
+
+/*
+
+// ViewModel
+
+There are three ways to declare a MutableState object in a composable:
+
+val mutableState = remember { mutableStateOf(defaultvalue) }
+var value by remember { mutableStateOf(defaultvalue) }
+val (value, setValue) = remember { mutableStateOf(defaultvalue) }
+
+*/
+
