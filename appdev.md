@@ -94,4 +94,9 @@ This process is done by implementing an application container that provides the 
 
 A container is an object that contains the dependencies that the app requires. These dependencies are used across the whole application, so they need to be in a common place that all activities can use. You can create a subclass of the Application class and store a reference to the container.  
 
+To me dependency injection is hoisting the variables into the constructors.  
+
+This process is done by implementing an application container that provides the repository to MarsViewModel.  
+
+
 
