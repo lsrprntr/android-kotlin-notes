@@ -62,6 +62,12 @@ You make a viewModel which holds states.
 You split the states into UiStates with their own interfaces.  
 That should cover the Ui Layer.  
 
+Retrofit  
+- takes parameters then performs GET request; receives JSON and returns Kotlin Objects
+![image](https://github.com/lsrprntr/android-kotlin-projects-practice/assets/39038103/45603eec-40a6-4148-ad82-786f624c6d8a)
+
+
+
 To split the Data Layer, you need to add dependency injection and repositories.  
 
 **What is a repository?**  
@@ -71,7 +77,10 @@ In general a repository class:
 - Resolves conflicts between multiple data sources.  
 - Abstracts sources of data from the rest of the app.  
 - Contains business logic.  
-- The repository naming convention is type of data + Repository.  
+- The repository naming convention is type of data + Repository.
+
+![image](https://github.com/lsrprntr/android-kotlin-projects-practice/assets/39038103/2f2b5b13-ea57-47c9-90b5-4cfb2684e330)
+
 
 DI is when a dependency is provided at runtime instead of being hardcoded into the calling class.  
 
@@ -84,3 +93,5 @@ To fix this issue, instead of the ViewModel creating the repository, we need a w
 This process is done by implementing an application container that provides the repository to the ViewModel.  
 
 A container is an object that contains the dependencies that the app requires. These dependencies are used across the whole application, so they need to be in a common place that all activities can use. You can create a subclass of the Application class and store a reference to the container.  
+
+
